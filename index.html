@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OrbitX</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="manifest" href="manifest.json">
+<link rel="manifest" href="/orbitx/manifest.json">
 <meta name="theme-color" content="#000000">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
 <style>
@@ -1404,12 +1404,10 @@ window.addEventListener('scroll',()=>{
   const sy=window.scrollY;
   document.getElementById('starfield').style.transform=`translateY(${sy*0.3}px)`;
 });
-</script>
-  <script>
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./service-worker.js')
-    .then(() => console.log('Service Worker Registered'));
+  navigator.serviceWorker.register('/orbitx/service-worker.js');
 }
 </script>
+  
 </body>
 </html>
