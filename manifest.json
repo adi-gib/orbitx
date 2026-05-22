@@ -1,14 +1,19 @@
 {
   "name": "OrbitX",
   "short_name": "OrbitX",
-  "start_url": "index.html",
+  "start_url": "/orbitx/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#000000",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "/orbitx/icon-192.png",
       "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/orbitx/icon-512.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ]
